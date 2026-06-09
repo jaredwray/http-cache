@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="48" viewBox="0 0 220 48" role="img" aria-label="http-cache">
+	<defs>
+		<linearGradient id="hc" x1="0" y1="0" x2="1" y2="1">
+			<stop offset="0" stop-color="#2563eb"/>
+			<stop offset="1" stop-color="#0ea5e9"/>
+		</linearGradient>
+	</defs>
+	<rect x="2" y="6" width="36" height="36" rx="9" fill="url(#hc)"/>
+	<path d="M13 16v16M13 24h12M25 16v16" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round"/>
+	<text x="48" y="31" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="22" font-weight="700" fill="#0f172a">http<tspan fill="#2563eb">-cache</tspan></text>
+</svg>
