@@ -1,0 +1,35 @@
+{
+	"name": "http-cache-mono-repo",
+	"version": "1.0.0",
+	"description": "A modern HTTP caching gateway from the makers of keyv & cacheable",
+	"private": true,
+	"type": "module",
+	"author": "Jared Wray <me@jaredwray.com>",
+	"license": "MIT",
+	"homepage": "https://github.com/jaredwray/http-cache",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jaredwray/http-cache.git"
+	},
+	"packageManager": "pnpm@11.5.2",
+	"engines": {
+		"node": "^22.18.0 || >=24.0.0"
+	},
+	"scripts": {
+		"website:build": "pnpm --filter @http-cache/website website:build",
+		"website:serve": "pnpm --filter @http-cache/website website:serve",
+		"website:dev": "pnpm --filter @http-cache/website website:dev",
+		"lint": "biome check .",
+		"format": "biome format --write .",
+		"test": "biome check . && vitest run --coverage",
+		"test:ci": "biome ci . && vitest run --coverage"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.16",
+		"@types/node": "^25.9.2",
+		"@vitest/coverage-v8": "^4.1.8",
+		"rimraf": "^6.1.3",
+		"typescript": "^6.0.3",
+		"vitest": "^4.1.8"
+	}
+}

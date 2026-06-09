@@ -1,0 +1,19 @@
+{
+	"name": "@http-cache/website",
+	"version": "1.0.0",
+	"description": "http-cache documentation website",
+	"private": true,
+	"type": "module",
+	"author": "Jared Wray <me@jaredwray.com>",
+	"license": "MIT",
+	"scripts": {
+		"website:build": "docula build",
+		"website:serve": "docula serve --build",
+		"website:dev": "docula dev",
+		"clean": "rimraf ./site/dist"
+	},
+	"devDependencies": {
+		"docula": "^2.0.0",
+		"rimraf": "^6"
+	}
+}
