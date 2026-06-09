@@ -33,8 +33,13 @@ the nearest healthy backend across regions. It is the right layer to put in fron
    Service** in two or more regions:
 
    ```bash
+   # Container Apps must live in a Container Apps environment — create one first:
+   az containerapp env create \
+     --name http-cache-env --resource-group http-cache-rg --location eastus
+
    az containerapp create \
      --name http-cache --resource-group http-cache-rg \
+     --environment http-cache-env \
      --image ghcr.io/jaredwray/http-cache:latest \
      --target-port 8080 --ingress external \
      --env-vars HTTP_CACHE_STORE=redis://your-redis:6379
